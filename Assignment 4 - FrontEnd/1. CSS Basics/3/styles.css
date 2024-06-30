@@ -1,0 +1,30 @@
+/* styles.css */
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the box with different border styles */
+.border-box {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 5px solid red;       /* Solid top */
+    border-right: 5px dotted green;  /* Dotted right */
+    border-bottom: 5px dashed blue;  /* Dashed bottom */
+    border-left: 5px double purple;  /* Double left */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}

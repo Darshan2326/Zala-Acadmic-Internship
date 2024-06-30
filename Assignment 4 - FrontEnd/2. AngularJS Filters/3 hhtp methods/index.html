@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AngularJS HTTP Methods Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="MainController as ctrl">
+    <h1>AngularJS HTTP Methods Demo</h1>
+    
+    <div>
+        <h2>HTTP GET Request</h2>
+        <button ng-click="ctrl.getData()">Get Data</button>
+        <p ng-show="ctrl.getDataResponse">{{ ctrl.getDataResponse }}</p>
+        <p ng-show="ctrl.getDataError">{{ ctrl.getDataError }}</p>
+    </div>
+
+    <div>
+        <h2>HTTP POST Request</h2>
+        <label for="postDataInput">Enter Data to Post:</label>
+        <input type="text" id="postDataInput" ng-model="ctrl.postData">
+        <button ng-click="ctrl.postDataRequest()">Post Data</button>
+        <p ng-show="ctrl.postDataResponse">{{ ctrl.postDataResponse }}</p>
+        <p ng-show="ctrl.postDataError">{{ ctrl.postDataError }}</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

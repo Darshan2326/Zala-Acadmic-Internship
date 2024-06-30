@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter Demo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .filter-item {
+        margin-bottom: 10px;
+    }
+    .output {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="filter-item">
+        <label for="dateInput">Enter Date (YYYY-MM-DD): </label>
+        <input type="text" id="dateInput" placeholder="YYYY-MM-DD">
+        <button onclick="formatDate()">Format Date</button>
+    </div>
+    
+    <div class="filter-item">
+        <label for="textInput">Enter Text: </label>
+        <input type="text" id="textInput" placeholder="Text">
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+    
+    <div class="output">
+        <h3>Output</h3>
+        <div id="outputContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

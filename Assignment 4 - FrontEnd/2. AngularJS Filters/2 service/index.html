@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AngularJS Services Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="MainController as ctrl">
+    <h1>AngularJS Services Demo</h1>
+    
+    <div>
+        <h2>Location Service</h2>
+        <p>Current URL: {{ ctrl.currentUrl }}</p>
+    </div>
+
+    <div>
+        <h2>HTTP Service</h2>
+        <button ng-click="ctrl.fetchData()">Fetch Data</button>
+        <p ng-show="ctrl.data">{{ ctrl.data }}</p>
+        <p ng-show="ctrl.error">{{ ctrl.error }}</p>
+    </div>
+
+    <div>
+        <h2>Timeout Service</h2>
+        <button ng-click="ctrl.startTimer()">Start Timer</button>
+        <p ng-show="ctrl.timer">{{ ctrl.timer }}</p>
+    </div>
+
+    <div>
+        <h2>Custom Service</h2>
+        <label>Enter text to manipulate:</label>
+        <input type="text" ng-model="ctrl.inputText">
+        <button ng-click="ctrl.manipulateText()">Manipulate Text</button>
+        <p ng-show="ctrl.outputText">{{ ctrl.outputText }}</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

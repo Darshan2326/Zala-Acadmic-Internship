@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="expressionApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Expression Evaluator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        .text-box {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body ng-controller="MainController">
+    <div>
+        <h1>AngularJS Expression Evaluator</h1>
+        <p>Enter an expression:</p>
+        <input type="text" ng-model="expression" class="text-box" placeholder="Type an expression here">
+        <p>Result: {{ expression }}</p>
+
+        <p>Enter a color to change the background:</p>
+        <input type="text" ng-model="bgColor" class="text-box" placeholder="Type a color here" ng-style="{'background-color': bgColor}">
+    </div>
+
+    <script>
+        var app = angular.module('expressionApp', []);
+        app.controller('MainController', ['$scope', function($scope) {
+            // $scope.expression = '';
+            // $scope.bgColor = '';
+        }]);
+    </script>
+</body>
+</html>

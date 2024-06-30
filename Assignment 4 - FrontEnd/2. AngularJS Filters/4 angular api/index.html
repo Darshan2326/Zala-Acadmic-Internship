@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="textApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Case Conversion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="TextController">
+    <div class="container">
+        <h1>AngularJS Case Conversion</h1>
+        <label for="inputText">Enter Text:</label>
+        <input type="text" id="inputText" ng-model="inputText" placeholder="Type something...">
+        <div class="output">
+            <p><strong>Lowercase:</strong> {{ lowercaseText }}</p>
+            <p><strong>Uppercase:</strong> {{ uppercaseText }}</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

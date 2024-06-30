@@ -1,0 +1,61 @@
+/* styles.css */
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+/* Subheader styles */
+h2 {
+    margin-top: 200px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 28px;
+    color: #555;
+    text-align: center;
+}
+
+/* Paragraph styles */
+p.normal {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+/* Italic text styles */
+p.italic {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Bold text styles */
+p.bold {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Underline text styles */
+p.underline {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #008000;
+    text-decoration: underline;
+    text-align: center;
+}
